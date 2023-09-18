@@ -1,6 +1,6 @@
 [tool.poetry]
 name = "proj-with-data"
-version = "0.1.0"
+version = "0.1.3"
 description = ""
 authors = ["Eric L Frederich <eric.frederich@siemens.com>"]
 readme = "README.md"
@@ -10,6 +10,9 @@ packages = [{include = "proj_with_data", from = "src"}]
 python = "^3.11"
 click = "^8.1.7"
 rich = "^13.5.3"
+
+[tool.poetry.scripts]
+foobar = 'proj_with_data:cli_main'
 
 
 [tool.poetry.group.dev.dependencies]
